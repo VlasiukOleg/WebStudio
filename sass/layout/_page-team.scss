@@ -1,0 +1,10 @@
+.social-group__link--team {
+  background-color: getBg-color('general-white');
+  color: getColor('primary-icon');
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent');
+    color: getColor('general-white');
+  }
+}

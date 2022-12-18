@@ -1,0 +1,28 @@
+.button-group {
+  @include centerdFlex();
+  @extend %list;
+
+  margin-bottom: 50px;
+}
+
+.button-group__button {
+  transition: gettransition(box-shadow), gettransition(color), gettransition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: getBg-color('accent');
+    color: getColor('general-white');
+    box-shadow: $box-shadow-secondary;
+  }
+}
+
+.button-group__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-group__button--current {
+  background-color: getBg-color('accent');
+  color: getColor('general-white');
+
+  box-shadow: $box-shadow-secondary;
+}

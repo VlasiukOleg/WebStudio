@@ -1,0 +1,16 @@
+.button--primary {
+  @extend %button;
+
+  background-color: getColor('accent');
+  color: getColor('general-white');
+}
+
+.button--secondary {
+  @extend %button;
+
+  padding: 6px 22px;
+
+  @include font($fw: 500);
+
+  background-color: getBg-color('secondary');
+}

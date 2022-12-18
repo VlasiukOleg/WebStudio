@@ -1,0 +1,38 @@
+.icons-list {
+  @include centerdFlex();
+  @extend %list;
+}
+
+.icons-list__item {
+  height: 92px;
+  flex-basis: calc(100% - 150px / 3);
+  margin-right: $main-gap;
+}
+
+.icons-list__item:last-child {
+  margin-right: 0px;
+}
+
+.icons-list__link {
+  @extend %link;
+
+  @include centerdFlex();
+
+  width: 100%;
+  height: 100%;
+  border: getBorder('icon');
+  border-radius: $primary-border-radius;
+  color: getColor('primary-icon');
+
+  transition: gettransition(color), gettransition(border);
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+    border: getBorder('accent');
+  }
+}
+
+.icons-list__icon {
+  fill: currentColor;
+}

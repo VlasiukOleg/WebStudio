@@ -1,0 +1,13 @@
+.page-header--border {
+  border-bottom: getBorder('primary');
+}
+
+.page-header__container {
+  @include centerdFlex();
+}
+
+.page-header__logo {
+  @extend %link;
+
+  margin-right: 93px;
+}

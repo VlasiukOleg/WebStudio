@@ -1,0 +1,10 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font(26, 700, 31, null);
+
+  color: getColor('logo');
+
+  &__accent {
+    color: getColor('accent');
+  }
+}

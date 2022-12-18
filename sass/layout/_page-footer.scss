@@ -1,0 +1,41 @@
+.page-footer {
+  background-color: getBg-color('primary');
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.page-footer__logo {
+  @extend %link;
+
+  display: inline-block;
+
+  color: getColor('general-white');
+
+  margin-bottom: 10px;
+}
+
+.social-wrap__heading {
+  margin-bottom: 20px;
+
+  @include font(14, 700, 16, 0.03);
+
+  text-transform: uppercase;
+
+  color: getColor('general-white');
+}
+
+.social-group__link--footer {
+  background-color: getBg-color('footer-icons');
+  color: getColor('general-white');
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent');
+  }
+}
