@@ -48,3 +48,9 @@
 
   fill: currentColor;
 }
+
+@media screen and (max-width: 767px) {
+  .contacts-info {
+    display: none;
+  }
+}

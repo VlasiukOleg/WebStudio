@@ -18,7 +18,6 @@
 
   color: getColor('secondary');
 
-
   transition: gettransition(color);
 
   @extend %link;
@@ -44,5 +43,11 @@
 
     background: getColor('accent');
     border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
   }
 }
