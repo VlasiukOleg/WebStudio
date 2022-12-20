@@ -1,8 +1,9 @@
 .page-hero {
   background-color: getBg-color('primary');
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   margin: 0 auto;
 
   background-image: linear-gradient(to right, #2f303a66 40%, #2f303a66 40%),
@@ -12,18 +13,31 @@
   background-repeat: no-repeat;
 
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    max-width: 1600px;
+  }
 }
 
 .page-hero__title {
-  max-width: 696px;
+  max-width: 360px;
 
   color: getColor('general-white');
 
-  @include font(44, 900, 60, 0.06);
+  @include font(26, 900, 42, 0.06);
 
   text-transform: uppercase;
 
   margin-bottom: $main-gap;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+
+    @include font(44, 900, 60, 0.06);
+  }
 }

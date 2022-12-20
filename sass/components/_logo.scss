@@ -7,4 +7,8 @@
   &__accent {
     color: getColor('accent');
   }
+
+  @media screen and (min-width: 1200px) {
+    @include font(26, 700, 31, null);
+  }
 }
