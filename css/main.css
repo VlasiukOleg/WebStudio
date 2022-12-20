@@ -107,9 +107,6 @@ img {
   letter-spacing: em;
   text-align: center;
 }
-.section--nopadding {
-  padding-top: 0px;
-}
 .section--team-background {
   background-color: #f5f4fa;
 }
@@ -118,8 +115,16 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .section--nopadding {
+    padding-top: 0px;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .section--none {
+    display: none;
+  }
+}
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;

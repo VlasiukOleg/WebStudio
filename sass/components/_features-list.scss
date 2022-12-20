@@ -62,10 +62,11 @@
 
   width: 100%;
   height: 120px;
-  margin-bottom: 30px;
 
-  background-color: #f5f4fa;
-  border-radius: 4px;
+  margin-bottom: $main-gap;
+
+  background-color: getBg-color('secondary');
+  border-radius: $primary-border-radius;
 
   @media screen and (min-width: 1200px) {
     width: 270px;

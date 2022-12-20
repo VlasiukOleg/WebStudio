@@ -15,10 +15,6 @@
     text-align: center;
   }
 
-  &--nopadding {
-    padding-top: 0px;
-  }
-
   &--team-background {
     background-color: getBg-color('secondary');
   }
@@ -26,5 +22,15 @@
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &--nopadding {
+      padding-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section--none {
+    display: none;
   }
 }
