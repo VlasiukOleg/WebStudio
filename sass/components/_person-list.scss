@@ -3,6 +3,12 @@
   @extend %list;
 
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include centerdFlex();
+
+    flex-wrap: wrap;
+  }
 }
 
 .person__item {
@@ -17,10 +23,37 @@
   &:not(:last-child) {
     margin-bottom: $main-gap;
   }
-}
 
-.person__item:nth-child(4n) {
-  // margin-right: 0px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-right: $main-gap;
+    margin-bottom: $main-gap;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+
+    flex-wrap: nowrap;
+
+    &:nth-child(2n) {
+      margin-right: $main-gap;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .person-meta {
