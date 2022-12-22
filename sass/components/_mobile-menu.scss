@@ -65,8 +65,16 @@
 }
 
 // Mobile-menu
+
+.mobile-menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
 .mobile-nav {
-  margin-bottom: 102px;
+  // margin-bottom: 102px;
 }
 
 .mobile-nav__list {
