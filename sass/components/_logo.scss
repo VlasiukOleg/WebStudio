@@ -1,6 +1,6 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  @include font(24, 700, 28, null);
+  @include font(24, 700, 28, 0.03);
 
   color: getColor('logo');
 

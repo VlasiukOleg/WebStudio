@@ -1,3 +1,11 @@
+.address-wrap {
+  margin-bottom: 60px;
+
+  @include desktop {
+    margin-bottom: 0px;
+  }
+}
+
 .address__list {
   @extend %list;
 
@@ -21,6 +29,6 @@
   }
 }
 
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
 }

@@ -1,16 +1,32 @@
 .icons-list {
   @include centerdFlex();
+
+  flex-wrap: wrap;
   @extend %list;
+
+  margin-left: $main-gap / -1;
+  margin-bottom: $main-gap / -1;
 }
 
 .icons-list__item {
   height: 92px;
-  flex-basis: calc(100% - 150px / 3);
-  margin-right: $main-gap;
-}
+  // flex-basis: calc((100% - 150px) / 6);
 
-.icons-list__item:last-child {
-  margin-right: 0px;
+  flex-basis: calc((100% - 60px) / 2);
+  margin-left: $main-gap;
+  margin-bottom: $main-gap;
+
+  @include tablet {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 180px) / 6);
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 
 .icons-list__link {

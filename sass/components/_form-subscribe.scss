@@ -1,5 +1,7 @@
 .subscribe-form {
-  @include centerdFlex();
+  @include desktop {
+    @include centerdFlex();
+  }
 }
 
 .subscribe__heading {
@@ -10,15 +12,20 @@
   text-transform: uppercase;
 
   color: getColor('general-white');
+
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .subscribe-form__input {
+  width: 100%;
   display: inline-block;
 
   padding: 15px;
-  margin-right: 12px;
-
-  width: 358px;
+  margin-bottom: 20px;
 
   border: getBorder('input');
   border-radius: $primary-border-radius;
@@ -33,12 +40,26 @@
 
     color: getColor('address');
   }
+
+  @include tablet {
+    max-width: 450px;
+  }
+
+  @include desktop {
+    margin-right: 12px;
+    margin-bottom: 0;
+
+    width: 358px;
+  }
 }
 
 .subscribe-form__button {
   @include centerdFlex();
 
-   transition: gettransition(background-color);
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: gettransition(background-color);
 
   &:hover,
   &:focus {
