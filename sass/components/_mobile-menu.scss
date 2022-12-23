@@ -55,12 +55,17 @@
 
   background-color: white;
 
-  transition: transform 250ms ease;
+  z-index: 999;
+
+  transition: gettransition(transform), gettransition(opacity);
+
+  opacity: 0;
 
   transform: translateX(100%);
 }
 
 .menu-container.is-open {
+  opacity: 1;
   transform: translateX(0);
 }
 
@@ -72,9 +77,6 @@
   flex-direction: column;
 
   justify-content: space-between;
-}
-.mobile-nav {
-  // margin-bottom: 102px;
 }
 
 .mobile-nav__list {

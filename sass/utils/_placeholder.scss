@@ -22,8 +22,6 @@
   background-color: getBg-color('general-white');
   color: getColor('secondary');
 
-  box-shadow: $box-shadow-simple;
-
   cursor: pointer;
 
   @media screen and (min-width: 1200px) {

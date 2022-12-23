@@ -24,6 +24,16 @@
         <a class="logo page-header__logo" href="index.html"
           ><span class="logo__accent">Web</span>Studio</a
         >
+        <button
+          type="button"
+          class="menu-toogle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg#icon-burger" class="menu-toogle__icon"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -53,17 +63,6 @@
             >
           </li>
         </ul>
-
-        <button
-          type="button"
-          class="menu-toogle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use href="./images/icons.svg#icon-burger" class="menu-toogle__icon"></use>
-          </svg>
-        </button>
       </div>
     </header>
     <!-- Main -->
@@ -177,7 +176,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="person-list">
             <li class="person__item">
-              <img src="./images/OurTeam/img1.jpg" alt="Ігор Дем'яненко дизайнер" width="450" />
+              <img src="./images/OurTeam/img1w450.jpg" alt="Ігор Дем'яненко дизайнер" width="450" />
               <div class="person-meta">
                 <h3 class="person-meta__user">Ігор Дем'яненко</h3>
                 <p class="person-meta__position">Product Designer</p>
@@ -212,7 +211,7 @@
             </li>
             <li class="person__item">
               <img
-                src="./images/OurTeam/img2.jpg"
+                src="./images/OurTeam/img2w450.jpg"
                 alt="Ольга Рєпіна розробник"
                 width="450"
                 class="photo"
@@ -251,7 +250,7 @@
             </li>
             <li class="person__item">
               <img
-                src="./images/OurTeam/img3.jpg"
+                src="./images/OurTeam/img3w450.jpg"
                 alt="Микола Тарасов маркетолог"
                 width="450"
                 class="photo"
@@ -290,7 +289,7 @@
             </li>
             <li class="person__item">
               <img
-                src="./images/OurTeam/img4.jpg"
+                src="./images/OurTeam/img4w450.jpg"
                 alt="Михайло Єрмаков дизайнер"
                 width="450"
                 class="photo"
@@ -375,7 +374,7 @@
         </div>
       </section>
     </main>
-    <div class="backdrop backdrop--is-hidden none" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button" data-modal-close>
           <svg class="modal__button__icon" width="18" height="18">

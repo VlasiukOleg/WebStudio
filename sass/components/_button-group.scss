@@ -1,8 +1,24 @@
 .button-group {
-  @include centerdFlex();
+  // @include centerdFlex();
   @extend %list;
 
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+
+  max-width: 326px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+  @include tablet {
+    justify-content: center;
+    max-width: 100%;
+
+    margin-bottom: 30px;
+
+    flex-wrap: nowrap;
+  }
 }
 
 .button-group__button {
@@ -16,8 +32,20 @@
   }
 }
 
+.button-group__item {
+  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 0px;
+  }
+}
+
 .button-group__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.button-group__item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
 }
 
 .button-group__button--current {
