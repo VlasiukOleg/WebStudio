@@ -128,10 +128,16 @@
 
   @extend %link;
 
-  &--mail {
+  &--phone {
     color: getColor('accent');
 
     @include font(34, 500, 40, 0.02);
+  }
+
+  @media screen and (max-width: 400px) {
+    &--phone {
+      @include font(24, 500, 28, 0.02);
+    }
   }
 }
 
