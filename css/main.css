@@ -1397,32 +1397,32 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-hero {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../../images/backgroud-hero-480@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../../images/backgroud-hero-480@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../images/backgroud-hero-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../images/backgroud-hero-480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .page-hero {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../../images/backgroud-hero-768.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../../images/backgroud-hero-768.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../images/backgroud-hero-768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../images/backgroud-hero-768.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .page-hero {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../../images/backgroud-hero-768@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../../images/backgroud-hero-768@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../images/backgroud-hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../images/backgroud-hero-768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .page-hero {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../../images/backgroud-hero-1200.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../../images/backgroud-hero-1200.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../images/backgroud-hero-1200.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../images/backgroud-hero-1200.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .page-hero {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../../images/backgroud-hero-1200@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../../images/backgroud-hero-1200@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(47, 48, 58, 0.4)), color-stop(40%, rgba(47, 48, 58, 0.4))), url("../images/backgroud-hero-1200@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4) 40%), url("../images/backgroud-hero-1200@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
