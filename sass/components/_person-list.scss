@@ -3,7 +3,7 @@
 
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include centerdFlex();
 
     flex-wrap: wrap;
@@ -22,13 +22,13 @@
     margin-bottom: $main-gap;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: $main-gap;
     margin-bottom: $main-gap;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% - 120px) / 4);
 
     flex-wrap: nowrap;

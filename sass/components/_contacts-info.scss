@@ -7,7 +7,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include centerdFlex();
   }
 }
@@ -15,7 +15,7 @@
 .contacts-info__item:not(:last-child) {
   margin-bottom: 10px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: $main-gap;
     margin-bottom: 0;
   }
@@ -40,7 +40,7 @@
     color: getColor('accent');
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include centerdFlex();
 
     padding-top: 32px;

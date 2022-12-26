@@ -1,13 +1,13 @@
 .features-list {
   @extend %list;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
 
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-wrap: nowrap;
 
     justify-content: space-between;
@@ -23,7 +23,7 @@
 
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+ @include desktop {
     text-align: left;
   }
 }

@@ -8,7 +8,7 @@
     color: getColor('accent');
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop{
     @include font(26, 700, 31, null);
   }
 }
